@@ -7,136 +7,7 @@
     <meta name="generator" content="LibreOffice 7.3.7.2 (Linux)" />
     <meta name="created" content="2025-08-22T21:34:56.698246160" />
     <meta name="changed" content="2025-08-23T21:38:12.657899577" />
-    <style type="text/css">
-        @page {
-            size: 8.27in 11.69in;
-            margin: 0.79in
-        }
-
-        body {
-            font-family: "Liberation Sans", sans-serif;
-        }
-
-        p {
-            line-height: 115%;
-            margin-bottom: 0.1in;
-            background: transparent
-        }
-
-        h3 {
-            margin-top: 0.1in;
-            margin-bottom: 0.08in;
-            background: transparent;
-            page-break-after: avoid
-        }
-
-        h3.western {
-            font-family: "Liberation Sans", sans-serif;
-            font-size: 14pt;
-            font-weight: bold
-        }
-
-        h3.cjk {
-            font-family: "Noto Sans CJK SC";
-            font-size: 14pt;
-            font-weight: bold
-        }
-
-        h3.ctl {
-            font-family: "Lohit Devanagari";
-            font-size: 14pt;
-            font-weight: bold
-        }
-
-        td p {
-            orphans: 0;
-            widows: 0;
-            background: transparent
-        }
-
-        a:link {
-            color: #000080;
-            text-decoration: underline
-        }
-
-        a:visited {
-            color: #800000;
-            text-decoration: underline
-        }
-
-        .form-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .form-table td {
-            border: 1px solid #000000;
-            padding: 0.5em;
-        }
-
-        .form-table .no-border {
-            border: none;
-        }
-
-        .form-table .question-col {
-            width: 75%;
-        }
-
-        .form-table .answer-col {
-            width: 25%;
-        }
-
-        .form-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1em;
-        }
-
-        .form-title {
-            color: #e16173;
-            font-weight: bold;
-            font-size: 1.5em;
-        }
-
-        .input-field,
-        .select-field,
-        .textarea-field {
-            width: 100%;
-            padding: 0.5em;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-family: 'Times New Roman', serif;
-            background: #ffffff;
-            color: #000000;
-        }
-
-        .submit-button {
-            padding: 0.5em 1em;
-            color: #ffff00;
-            background: #127622;
-            font-family: 'Times New Roman', serif;
-            font-size: 16pt;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-        }
-
-        .submit-button:disabled {
-            background: #cccccc;
-            cursor: not-allowed;
-        }
-
-        .footer-img {
-            float: left;
-            margin-right: 1em;
-        }
-
-        .header-img {
-            float: left;
-            margin-right: 1em;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/servform.css">
 </head>
 
 <body lang="en-TT" link="#000080" vlink="#800000" dir="ltr">
@@ -186,7 +57,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align: right; font-style: italic; color: #e16173;">
+                <td id="improv" colspan="2">
                     Please answer the following questions to help us improve our services.
                 </td>
             </tr>
@@ -301,29 +172,19 @@
             <li>Click the Submit button to email the results to Ty3TECH Ltd.</li>
         </ol>
 
-        <p style="font-style: italic; color: #e16173; font-size: 10pt;">
+        <p id="fback">
             Thank you for taking the time to complete our review. Your feedback is important to us and helps us to
             improve our service.
         </p>
-    </form>p>
+    </form>
 
     </form>
 
-    <div title="footer" style="margin-top: 2em; padding-top: 1em; border-top: 1px solid #ccc;">
-        <img src="Service_Eval_Form_html_3b06d9e9f4ccb5aa.png" name="Image4" alt="Ty3_copyright" class="footer-img"
-            width="46" height="27" border="0" />
+    <div id="footdiv" title="footer">
+        <img src="Service_Eval_Form_html_3b06d9e9f4ccb5aa.png" name="Image4" alt="Ty3_copyright" class="footer-img" />
     </div>
+    <script src="js/servform.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const agreeCheckbox = document.getElementById('agree_terms');
-            const submitButton = document.getElementById('submit_button');
-
-            agreeCheckbox.addEventListener('change', function () {
-                submitButton.disabled = !this.checked;
-            });
-        });
-    </script>
 </body>
 
 </html>
